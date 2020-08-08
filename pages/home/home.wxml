@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello world</text>
-<button size="mini">按钮</button>
+<!-- 1.小程序的数据绑定：{{}} --mustache语法 -->
+<view>{{name}}</view>
+<view>{{age}}</view>
+<!-- 2.小程序的列表渲染：wx:for -->
+<!-- 使用变量必须使用{{}}-mastache语法 -->
+<view wx:for="{{basketballStars}}">{{item.id}}--{{item.name}}--{{item.age}}</view>
+
+<!-- 3.事件绑定：计数器案例 -->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="handleIncrebtion">+</button>
+<button size="mini" bindtap="handleSubcrebtion">-</button>
