@@ -1,66 +1,58 @@
+//在app中可以定义全局变量,并且通过getApp()获取里面的全局变量
+const app = getApp()
+console.log(app.globalData.name);
+console.log(app.globalData.age);
+
+//注册一个页面示例
 // pages/home/home.js
 Page({
-
+    
   /**
-   * 页面的初始数据
+   * 2.页面的初始数据
    */
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  //监听wxml的一些点击、移动等事件
+  handleGetUserInfo(event) {
+    console.log(event);
+    
+  },
+  //--------1.监听页面的生命周期
+  //页面被加载
+  onLoad() {
+    console.log('onLoad');
+    //进行数据请求
+    wx:wx.request({
+      url:"",
+    //通过success来返回结果
+    })
+  },
+  //页面显示出来:在onready之前
+  onShow() {
+    console.log('onShow');
+  },
+  //页面隐藏
+  onHide() {
+    console.log('onHide');
+  },
+  //页面初次渲染完成
+  onReady() {
+    console.log('onReady');
+  },
+  //
+  onUnload() {
+    console.log('onUnload');
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  //4.------监听其他事件-----
+  //页面的滚动
+  onPageScroll() {
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  //监听页面滚动到底部
+  onReachBottom() {
 
   }
+  //监听下拉刷新
 })
