@@ -10,7 +10,7 @@
     "navigationBarTitleText": "我的小程序",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "selectedColor": "#ff5777",
