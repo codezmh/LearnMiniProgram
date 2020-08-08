@@ -1,0 +1,30 @@
+/* pages/view/view.wxss */
+.box1{
+  background-color: red;
+  width:100px;
+  height: 100px;
+}
+.box1-view{
+  background-color: skyblue;
+  font-size: 30px;
+}
+.box2{
+  margin-top: 20px;
+  background-color: red;
+  width:100px;
+  height: 100px;
+}
+
+.box2-view{
+  background-color: skyblue;
+  font-size: 30px;
+}
+.box3{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-top: 20px;
+}
+.box3-view{
+  background-color: green;
+}
