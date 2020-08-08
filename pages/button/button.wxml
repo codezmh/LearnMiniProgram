@@ -1,0 +1,23 @@
+<!--pages/button/button.wxml-->
+<!-- 1.基本使用 -->
+<button>按钮</button>
+<!--2.size:属性，设置以后不会独占一行 -->
+<button size="mini">按钮</button>
+<!-- 3.type属性
+primary:绿色
+warn:红色 
+-->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 4.loading属性：加载状态
+通过该属性,可以动态绑定一个值决定是否需要loading为true
+ -->
+<button size="mini" loading="{{isLoading}}">按钮</button>
+
+<!-- 5.disabled属性：是否可选 -->
+<button disabled>按钮</button>
+
+<!-- 5.hover-class属性：操作样式 -->
+<button hover-class="pressed">按钮</button>

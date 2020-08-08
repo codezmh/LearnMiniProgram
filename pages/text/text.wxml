@@ -1,0 +1,21 @@
+<!--pages/text/text.wxml-->
+
+<!-- 1.基本使用:默认不换行,行内元素 换行符\n-->
+<text>Hello World\n</text>
+<text>Hello Coder\n</text>
+<!-- 文本是否可选:默认情况下文本不可选-->
+<text>你好啊\n</text>
+<text selectable="{{true}}">Hello Coder\n</text>
+
+<!-- 3.space:空格 
+  nbsp:默认空格
+  emsp:一个中文字符
+  ensp:半个中文字符
+-->
+<text>Hello Coder\n</text>
+<text space="nbsp">Hello Coder\n</text>
+<text space="emsp">Hello Coder\n</text>
+<text space="ensp">Hello Coder\n</text>
+
+<!-- decode:是否解码：可以只写一个decode即为属性true -->
+<text decode>25 &gt; 18</text>
