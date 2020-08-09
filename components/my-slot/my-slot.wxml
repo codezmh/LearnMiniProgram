@@ -1,0 +1,4 @@
+<!--components/my-slot/my-slot.wxml-->
+<view>我是头部的内容</view>
+<slot/>
+<view>我是尾部的内容</view>

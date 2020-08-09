@@ -1,0 +1,10 @@
+/* components/component/compo.wxss */
+.title{
+  color: blue;
+  font-weight: 700;
+}
+.content{
+  width:200px;
+  height: 200px;
+  background-color: yellow;
+}

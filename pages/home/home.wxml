@@ -1,3 +1,51 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello world</text>
 <button size="mini">按钮</button>
+<!-- 1.使用自定义组件 -->
+<!-- 组件的名称中不能使用特殊符号 -->
+<!-- 自定义组件内部可以引用其他自定义组件 -->
+<!-- 不要以  --wx--作为自定义组件的前缀 -->
+<!-- 在app的json文件中作全局组件注册，可以在所有页面和其他自定义组件中使用 -->
+<!-- <component/>
+<component/> -->
+
+<!-- 2.自定义组件的样式细节 -->
+<!-- <my-style/> -->
+
+<!-- 3.自定义组件和页面之间的通信:
+通过 properties从页面给组件传递内容 
+传递样式：使用externalClasses-->
+<my-prop title="哈哈哈" titleclass="red"/>
+<my-prop title="呵呵呵" titleclass="blue"/>
+<my-prop titleclass="yellow"/>
+
+<!-- 4.组件的事件传递 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:increment="handleIncrement"/>
+
+<!-- tabcontrol组件 -->
+<w-tab-control title="{{['衣服', '裤子', '鞋子']}}"
+               bind:ItemClick="handleTabClick"/>
+
+
+<!-- 6.通过方法修改组件内的值 -->
+<button size="mini" bind:tap="handleIncrementCpn">修改组件内的值 </button>
+<my-sel id="my-sel"/>
+
+<!-- 7.插槽的使用 -->
+<!-- 7.1 单个插槽的使用 -->
+<my-slot>
+  <button>我是插入的按钮</button>
+</my-slot>
+<my-slot>
+  <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+</my-slot>
+
+<!-- 7.2多个插槽的使用：
+  1.给每个插槽起一个名字
+  2.z在Commponents中添加一个options，multipleSlots=>true
+ -->
+<my-mslot>
+  <view slot="slot2">我是插入的内容</view>
+  <view slot="slot1">我是slot1</view>
+</my-mslot>
