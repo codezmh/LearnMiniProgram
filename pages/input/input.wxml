@@ -1,0 +1,25 @@
+<!--pages/input/input.wxml-->
+<!-- input的基本使用 -->
+<input/>
+
+<!-- 2.value:input中的默认值 -->
+<input value="呵呵呵"/>
+
+<!-- 3.type决定键盘类型（数字、字母等）
+ text:文本输入键盘；
+ number:数字键盘；
+ 文档里查看
+ -->
+ <!--  password:明文暗文 -->
+<input password></input>
+<!-- placehold:占位符，没有内容时的占位文字 -->
+<input placeholder="请输入内容"></input>
+
+<!-- confirmtype:设置键盘右下角按钮的文字，仅在type='text'时生效 -->
+
+<!-- input绑定事件
+  bindinput:用户通过键盘输入内容时
+  bindfocus:聚焦时触发
+  bindblur:失去焦点时触发
+ -->
+ <input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"></input>
