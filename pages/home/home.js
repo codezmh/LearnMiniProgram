@@ -7,60 +7,28 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleTap() {
+    console.log("按钮点击了");
+    
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleTouchend() {
+    console.log(" handleTouchend");
+    
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleTouchstart() {
+    console.log(" handleTouchstart");
+    
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleTouchmove() {
+    console.log("handleTouchmove");
+    
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handleTap() {
+    console.log("  handleTap");
+    
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleLongtap() {
+    console.log(" handleLongtap");
+    
   }
 })

@@ -2,4 +2,8 @@
 .title{
   color:red
 }
-
+.box{
+    width: 320rpx;
+    height: 320rpx;
+    background-color: green;
+}

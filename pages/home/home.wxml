@@ -1,3 +1,16 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello world</text>
 <button size="mini">按钮</button>
+
+<!-- 事件的监听 -->
+<button size="mini" bindtap="handleTap">按钮</button>
+<button size="mini" bind:tap="handleTap">按钮</button>
+<button size="mini" catch:tap="handleTap">按钮</button>
+
+<!-- 常见的事件 -->
+<view class="box" 
+ bindtouchend="handleTouchend"
+ bindtouchmove="handleTouchmove"
+ bindtouchstart="handleTouchstart"
+ bindtap="handleTap"
+ bindlongtap="handleLongtap"></view>
