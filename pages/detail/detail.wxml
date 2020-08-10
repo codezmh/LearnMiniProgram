@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<button size="mini" bind:tap="handleBackHome">回到首页</button>
